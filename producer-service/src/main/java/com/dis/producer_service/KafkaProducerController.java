@@ -16,5 +16,6 @@ public class KafkaProducerController {
     public String publish(@RequestParam("message") String message) {
         kafkaTemplate.send(TOPIC, message);
         return "Message sent: " + message;
+//hello hi namaste 
     }
 }
